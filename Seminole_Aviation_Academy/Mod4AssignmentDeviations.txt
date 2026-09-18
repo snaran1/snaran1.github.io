@@ -1,0 +1,6 @@
+Here are the deviations from the mockup for the website
+- Color scheme changes Instead of light blue, I used as color picker and took the navy from the logo to match better. 
+- On the Tablet view, there was a background color on the mockup. I found how to expand the header so it did not need a background color.
+- Under the "Our Aircraft Rental Fleet" I went too ambitious for the mockup. I tried to look around W3 Schools for a way to make a slideshow. 
+    It was goign to take way too much time to try to understand the code to make it work. Instead of having a slideshow, I made a "Featured Aircraft" section that had 4 aircraft. 
+- Another change is the Call to Action (Runway thing right above the header). I didnt like how this looked when I loaded it into the website. Instead of a runway, I had a similar picture to the header to tie the themeing together.  

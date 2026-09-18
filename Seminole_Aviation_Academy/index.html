@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Seminole Aviation Academy</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seminole.css">
+  </head>
+  <body>
+    <header class="hero-header">
+      <div class="header-overlay">
+        <img src="Images/SAA_Logo.png" alt="Seminole Aviation Academy Logo" class="main-logo">
+      </div>
+    </header>
+    <nav class="main-navbar">
+      <div class="nav-desktop-container">
+        <div class="nav-links-centered">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="flight-training.html">Flight Training</a>
+          <a href="rentals.html">Rentals</a>
+          <a href="maintenance.html">Maintenance</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="nav-mobile-container">
+        <a href="index.html" class="mobile-logo-link"><img src="Images/SAA_logo_only.png" alt="SAA Logo Only" class="mobile-logo-img"></a>
+        <!-- Hidden checkbox to control the drawer state without JavaScript -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <!-- Hamburger icon button -->
+        <label for="menu-toggle" class="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- Slide-out Side Drawer Layer -->
+        <div class="side-drawer">
+          <!-- Label acting as a close overlay backdrop -->
+          <label for="menu-toggle" class="drawer-close-overlay"></label>
+          <div class="drawer-content">
+            <!-- Close Button inside the panel -->
+            <label for="menu-toggle" class="drawer-close-btn">&times;</label>
+            <div class="drawer-section"> <!-- Primary Pages Stack -->
+              <h3>Main Navigation</h3>
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="flight-training.html">Flight Training</a>
+              <a href="rentals.html">Rentals</a>
+              <a href="maintenance.html">Maintenance</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="drawer-section resources-section"> <!-- Mobile Resources Stack -->
+              <h3>Additional Resources</h3>
+              <a href="https://aviationweather.gov/" target="_blank">Aviation Weather Gov</a>
+              <a href="https://www.weather.gov/tbw/tampabayaviationweather" target="_blank">National Weather Service Tampa</a>
+              <a href="https://notams.aim.faa.gov/notamSearch/nsapp.html#/" target="_blank">NOTAM Search</a>
+              <a href="https://skyvector.com/airport/SPG/Albert-Whitted-Airport" target="_blank">KSPG Frequencies and Charts</a>
+              <a href="https://parkviewlive.com/locations/albert-whitted-airport" target="_blank">KSPG Live</a>
+              <a href="https://vfrmap.com/?type=vfrc&lat=27.953&lon=-82.828&zoom=10&api_key=763xxE1MJHyhr48DlAP2qQ" target="_blank">Digital Aeronautical Maps</a>
+              <a href="https://globe.adsbexchange.com/" target="_blank">Live ADS-B</a>
+              <a href="https://www.faa.gov/about/office_org/field_offices/fsdo/tpa" target="_blank">FAA Tampa FSDO</a>
+              <a href="https://medxpress.faa.gov/MedXpress/Disclaimer.aspx" target="_blank">MedExpress</a>
+            </div> <!-- Closes Resources stack-->
+          </div> <!-- Closes Mobile Nav Pop-up-->
+        </div> <!-- Closes Nav -->
+      </div>
+    </nav>
+    <div id="wrapper">
+        <div class="content"> 
+            <main class="main-content"> <!-- CONTENT GOES HERE -->
+              <section class="hero-promo-section">
+                <div class="hero-content">
+                  <h1 class="hero-text">Fly with Seminole Aviation</h1>
+                </div>
+              </section>
+
+              <section  class="flight-training-group">
+                <img id="FT-img" src="Images/flight_training.jpg" alt="Student pilot learning" >
+                <H2>Flight Training</H2>
+                <br>
+                <p><b>Discovery Flights</b> - Take your first step into the world of aviation with a Discovery Flight!</p>
+                <p><b>Certifications</b> - See what Seminole Aviation Academy has to offer!</p>
+                <p><b>Programs</b> - Whether you chose to learn at your own pace, take a structured program, or partner with Liberty University to receive a college degree while training, Seminole Aviation has a program right for you.</p>
+              </section>
+
+              <section class="rental-fleet-block">
+                <h2 class="section-title">Our Aircraft Rental Fleet</h2>
+                <p>All aircraft are maintained above FAA standards. Prices for each aircraft are wet rates (gas included) based on hourly fuel consumption on average performance. <a href="contact.html">Contact us</a> for scheduling your aircraft rental.</p>
+                <h3>Featured Aircraft</h3>
+                <div class="container">
+                  <!-- Box 1 -->
+                  <div class="cards">
+                      <div class="card-image-wrapper">
+                          <img src="Images/Cessna_172_330x220.jpg" alt="Cessna 172" class="card-image">
+                      </div>
+                      <div class="card-info">
+                          <h4>Cessna 172</h4>
+                          <p>$190/hr</p>
+                      </div>
+                  </div>
+                  <!-- Box 2 -->
+                  <div class="cards">
+                      <div class="card-image-wrapper">
+                          <img src="Images/piper_comanche_680x453.jpg" alt="Piper Comanche" class="card-image">
+                      </div>
+                      <div class="card-info">
+                          <h4>Piper Comanche</h4>
+                          <p>$250/hr</p>
+                      </div>
+                  </div>
+                  <!-- Box 3 -->
+                  <div class="cards">
+                      <div class="card-image-wrapper">
+                          <img src="Images/piper_seminole_800x483.jpg" alt="Piper Seminole" class="card-image">
+                      </div>
+                      <div class="card-info">
+                          <h4>Piper Seminole</h4>
+                          <p>$350/hr</p>
+                      </div>
+                  </div>
+                  <!-- Box 4 -->
+                  <div class="cards">
+                      <div class="card-image-wrapper">
+                          <img src="Images/robinson_r22-805x493.jpg" alt="Robinson R22" class="card-image">
+                      </div>
+                      <div class="card-info">
+                          <h4>Robinson R22</h4>
+                          <p>$300/hr</p>
+                      </div> <!-- Closes Card info -->
+                  </div> <!-- closes Card -->
+                </div> <!-- closes container -->
+                <a href="rentals.html" class="button">See all Rental aircraft</a>
+              </section>
+
+              <section class="maintenance-index">
+                <div class="maintenance-img-wrapper">
+                  <img id="MT-img" src="Images/AnP_780x470.jpg" alt="Aviation mechanic inspecting a plane propeller">
+                </div>
+                <div class="maintenance-text">
+                  <h2>Maintenance</h2>
+                  <ul>
+                    <li>Avionics</li>
+                    <li>IFR Certifications</li>
+                    <li>100 hour/Annual Inspections</li>
+                    <li>Piston Single & Twin Engine Aircraft Maintenance</li>
+                    <li>Turbine Single & Twin Engine Aircraft Maintenance</li>
+                    <li>Helicopter Maintenance</li>
+                    <li>Air Conditioning System Repairs</li>
+                  </ul>
+                </div>
+              </section>
+              <a href="maintenance.html" class="button">See all maintenance services</a>
+
+              <section class="why_choose_us">
+                <h2>Why Choose Seminole Aviation Academy</h2>
+                <p>✓ Flexible Training</p>
+                <p>✓ Local Airport</p>                     
+                <p>✓ Experienced Instructors</p> 			
+                <p>✓ Airplane & Helicopter Training</p>
+                <p>Charles Johnson formed Seminole Aviation Academy in 2020 after 15 years as an Instructor Pilot for the United States Air Force. 
+                  His goal is to make aviation accessible to the public. 
+                  With dedicated, patient, and passionate Certified Flight Instructors (CFIs) guiding you every step of the way, the dream of flight 
+                  is closer than you think. Ready to feel the thrill of your very first takeoff? Book a Discovery Flight with one of our instructors today and see the world from 3,000 feet.</p>
+              </section>
+
+              <section class="runway-cta-section">
+                <div class="runway-cta-content">
+                  <h2 class="runway-cta-title">Ready to Fly?</h2>
+                  <a href="contact.html" class="runway-cta-btn">Fly with Seminole Aviation Academy</a>
+                </div>
+              </section>
+            </main>
+
+            <aside class="sidebar">
+              <h2>Contact Us</h2>
+              <p>(727) 555-5555</p>
+              <p><a href="https://www.google.com/maps/place/Albert+Whitted+Airport/@27.7641043,-82.6311477,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2e190b146c28f:0xe0880afd08de68cf!8m2!3d27.7641043!4d-82.6285728!16zL20vMGZueXAz?entry=ttu&g_ep=EgoyMDI2MDkwNi4wIKXMDSoASAFQAw%3D%3D">107 8th Ave SE,<br>St. Petersburg, FL<br>33701</a></p>
+              <br>
+              <a href="contact.html" class="button">Fly with Seminole Aviation</a>
+              <a href="contact.html" class="button">Contact Maintenance Team</a>
+            </aside> 
+        </div> <!-- Closes content -->
+    </div> <!-- Closes wrapper -->
+    <footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-column"> <!-- Group 1 -->
+      <a href="https://aviationweather.gov/" target="_blank">Aviation Weather Gov</a>
+      <a href="https://www.weather.gov/tbw/tampabayaviationweather" target="_blank">National Weather Service Tampa</a>
+      <a href="https://notams.aim.faa.gov/notamSearch/nsapp.html#/" target="_blank">NOTAM Search</a>
+    </div>
+    <div class="footer-column"> <!-- Group 2 -->
+      <a href="https://skyvector.com/airport/SPG/Albert-Whitted-Airport" target="_blank">KSPG Frequencies and Charts</a>
+      <a href="https://parkviewlive.com/locations/albert-whitted-airport" target="_blank">KSPG Live</a>
+      <a href="https://vfrmap.com/?type=vfrc&lat=27.953&lon=-82.828&zoom=10&api_key=763xxE1MJHyhr48DlAP2qQ" target="_blank">Digital Aeronautical Maps</a>
+    </div>
+    <div class="footer-column"> <!-- Group 3 -->
+      <a href="https://globe.adsbexchange.com/" target="_blank">Live ADS-B</a>
+      <a href="https://www.faa.gov/about/office_org/field_offices/fsdo/tpa" target="_blank">FAA Tampa FSDO</a>
+      <a href="https://medxpress.faa.gov/MedXpress/Disclaimer.aspx" target="_blank">MedExpress</a>
+    </div>
+  </div>
+  <hr>
+    <p>Copyright &copy; 2026 Seminole Aviation Academy</p>
+</footer>
+    <script>
+    </script>
+  </body>
+</html>
