@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Seminole Aviation Academy :: Rentals</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seminole.css">
+  </head>
+  <body>
+    <header class="hero-header">
+      <div class="header-overlay">
+        <img src="Images/SAA_Logo.png" alt="Seminole Aviation Academy Logo" class="main-logo">
+      </div>
+    </header>
+    <!-- Main Responsive Sticky Navigation Bar -->
+    <nav class="main-navbar">
+      <!-- PC and Tablet - Centered Links -->
+      <div class="nav-desktop-container">
+        <div class="nav-links-centered">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="flight-training.html">Flight Training</a>
+          <a href="rentals.html">Rentals</a>
+          <a href="maintenance.html">Maintenance</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <!-- Mobile view nav bar -->
+      <div class="nav-mobile-container">
+        <a href="index.html" class="mobile-logo-link"><img src="Images/SAA_logo_only.png" alt="SAA Logo Only" class="mobile-logo-img"></a>
+        <!-- Hidden checkbox to control the drawer state without JavaScript -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <!-- Hamburger icon button -->
+        <label for="menu-toggle" class="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- Slide-out Side Drawer Layer -->
+        <div class="side-drawer">
+          <!-- Label acting as a close overlay backdrop -->
+          <label for="menu-toggle" class="drawer-close-overlay"></label>
+          <div class="drawer-content">
+            <!-- Close Button inside the panel -->
+            <label for="menu-toggle" class="drawer-close-btn">&times;</label>
+            <div class="drawer-section"> <!-- Primary Pages Stack -->
+              <h3>Main Navigation</h3>
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="flight-training.html">Flight Training</a>
+              <a href="rentals.html">Rentals</a>
+              <a href="maintenance.html">Maintenance</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="drawer-section resources-section"> <!-- Mobile Resources Stack -->
+              <h3>Additional Resources</h3>
+              <a href="https://aviationweather.gov/" target="_blank">Aviation Weather Gov</a>
+              <a href="https://www.weather.gov/tbw/tampabayaviationweather" target="_blank">National Weather Service Tampa</a>
+              <a href="https://notams.aim.faa.gov/notamSearch/nsapp.html#/" target="_blank">NOTAM Search</a>
+              <a href="https://skyvector.com/airport/SPG/Albert-Whitted-Airport" target="_blank">KSPG Frequencies and Charts</a>
+              <a href="https://parkviewlive.com/locations/albert-whitted-airport" target="_blank">KSPG Live</a>
+              <a href="https://vfrmap.com/?type=vfrc&lat=27.953&lon=-82.828&zoom=10&api_key=763xxE1MJHyhr48DlAP2qQ" target="_blank">Digital Aeronautical Maps</a>
+              <a href="https://globe.adsbexchange.com/" target="_blank">Live ADS-B</a>
+              <a href="https://www.faa.gov/about/office_org/field_offices/fsdo/tpa" target="_blank">FAA Tampa FSDO</a>
+              <a href="https://medxpress.faa.gov/MedXpress/Disclaimer.aspx" target="_blank">MedExpress</a>
+            </div> <!-- Closes Resources stack-->
+          </div> <!-- Closes Mobile Nav Pop-up-->
+        </div> <!-- Closes Nav -->
+      </div>
+    </nav>
+    <div id="wrapper">
+        <div class="content"> 
+            <main class="main-content"> <!-- CONTENT GOES HERE -->
+              <section class="hero-promo-section-rent">
+                <div class="hero-content-rent">
+                  <h1 class="hero-text-rent">Aircraft Rentals</h1>
+                </div>
+              </section>
+
+              <section class="rental-info">
+                <h2>Flight & Ground Instruction Rates</h2>
+                <p>Standard Instructor Rates: $75/hr</p>
+                <p>All aircraft are maintained above FAA standards. Prices for each aircraft are wet rates (gas included) based on hourly fuel consumption on average performance.</p>
+                <a href="contact.html" class="small-button">Contact us for scheduling and availability</a>
+              </section>
+              
+              
+              <section class="our-fleet">
+                <h2>Our Fleet</h2>
+                <nav class="fleet-sub-nav">
+                  <ul class="fleet-nav-menu">
+                    
+                    <!-- Category 1: Single-Engine -->
+                    <li class="fleet-nav-item">
+                      <a href="#single-engine-section" class="fleet-nav-link">Single-Engine Planes</a>
+                      <ul class="fleet-dropdown">
+                        <li><a href="#single-beechcraft">Beechcraft</a></li>
+                        <li><a href="#single-cessna">Cessna</a></li>
+                        <li><a href="#single-cirrus">Cirrus</a></li>
+                        <li><a href="#single-diamond">Diamond</a></li>
+                        <li><a href="#single-piper">Piper</a></li> 
+                      </ul>
+                    </li>
+
+                    <!-- Category 2: Multi-Engine -->
+                    <li class="fleet-nav-item">
+                      <a href="#multi-engine-section" class="fleet-nav-link">Multi-Engine Planes</a>
+                      <ul class="fleet-dropdown">
+                        <li><a href="#multi-beechcraft">Beechcraft</a></li>
+                        <li><a href="#multi-diamond">Diamond</a></li>
+                        <li><a href="#multi-piper">Piper</a></li>
+                      </ul>
+                    </li>
+
+                    <!-- Category 3: Helicopters -->
+                    <li class="fleet-nav-item">
+                      <a href="#helicopter-section" class="fleet-nav-link">Helicopters</a>
+                      <ul class="fleet-dropdown">
+                        <li><a href="#heli-robinson">Robinson</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>          
+                <div class="main-content">
+                  <!-- ================= SINGLE ENGINE SECTION ================= -->
+                  <section id="single-engine-section" class="fleet-category">
+                    <h2>Single-Engine Planes</h2>
+                    <!-- Beechcraft Single engine -->
+                    <div class="accordion-item" id="single-beechcraft">
+                      <input type="checkbox" id="toggle-single-beechcraft" class="accordion-toggle" checked>
+                      <label for="toggle-single-beechcraft" class="accordion-label">Beechcraft</label>
+                      <div class="accordion-content">
+                        <div class="fleet-card-grid">
+                          <!-- Card Template -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/beechcraft_bonanza-500x408.jpg" alt="Beechcraft Bonanza">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Beechcraft Bonanza</h3>
+                              <p class="tail-number">N834BZ</p>
+                              <p class="rental-rate">$250 / hr</p>
+                            </div> <!-- Closes text -->
+                          </div> <!-- Closes Card -->
+                        </div> <!-- Closes Card Grid for group-->
+                      </div> <!-- Closes accordian -->
+                    </div> <!-- Closes Beechcraft Single Engine-->
+                    
+                    <!-- Cessna Single engine -->
+                    <div class="accordion-item" id="single-cessna">
+                      <input type="checkbox" id="toggle-cessna" class="accordion-toggle" checked>
+                      <label for="toggle-cessna" class="accordion-label">Cessna</label>
+                      <div class="accordion-content">
+                        <div class="fleet-card-grid">
+                          <!-- Card Template 1 -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/cessna_152-650x433.jpg" alt="Cessna 152">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Cessna 152</h3>
+                              <p class="tail-number">N152ER</p>
+                              <p class="rental-rate">$120 / hr</p>
+                            </div>
+                          </div>
+                          <!-- Card Template 2 -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/Cessna_172_330x220.jpg" alt="Cessna 172 Skyhawk">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Cessna 172 Skyhawk</h3>
+                              <p class="tail-number">N427SP</p>
+                              <p class="rental-rate">$165 / hr</p>
+                            </div>
+                          </div>
+                          <!-- Card Template 3 -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/cessna_172-1000x667.jpg" alt="Cessna 172 Skyhawk">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Cessna 172 Skyhawk</h3>
+                              <p class="tail-number">N731NR</p>
+                              <p class="rental-rate">$165 / hr</p>
+                            </div>
+                          </div>
+                          <!-- Card Template 4 -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/cessna-182-skylane-1280x878.webp" alt="Cessna 182 ">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Cessna 182 Skylane</h3>
+                              <p class="tail-number">N182RG</p>
+                              <p class="rental-rate">$200 / hr</p>
+                            </div> <!-- Closes text -->
+                          </div> <!-- Closes Card -->
+                        </div> <!-- Closes Card Grid for group-->
+                      </div> <!-- Closes accordian -->
+                    </div> <!-- Closes Cessna Single Engine-->
+
+                    <!-- Cirrus Single engine -->
+                    <div class="accordion-item" id="single-cirrus">
+                      <input type="checkbox" id="toggle-cirrus" class="accordion-toggle" checked>
+                      <label for="toggle-cirrus" class="accordion-label">Cirrus</label>
+                      <div class="accordion-content">
+                        <div class="fleet-card-grid">
+                          <!-- Card Template 1 -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/Cirrus_SR-22-1024x734.jpg" alt="Cirrus SR22">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Cirrus SR22</h3>
+                              <p class="tail-number">N224SR</p>
+                              <p class="rental-rate">$350 / hr</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- Closes Cirrus Single -->
+
+                    <!-- Diamond Single engine -->
+                    <div class="accordion-item" id="single-diamond">
+                      <input type="checkbox" id="toggle-diamond" class="accordion-toggle" checked>
+                      <label for="toggle-diamond" class="accordion-label">Diamond</label>
+                      <div class="accordion-content">
+                        <div class="fleet-card-grid">
+                          <!-- Card Template 1 -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/diamond_DA40-NG-1400x874.jpg" alt="Diamond DA40 NG">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Diamond DA40 NG</h3>
+                              <p class="tail-number">N404NG</p>
+                              <p class="rental-rate">$230 / hr</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Piper Single engine -->
+                    <div class="accordion-item" id="single-piper">
+                      <input type="checkbox" id="toggle-single-piper" class="accordion-toggle" checked>
+                      <label for="toggle-single-piper" class="accordion-label">Piper</label>
+                      <div class="accordion-content">
+                        <div class="fleet-card-grid">
+                           <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/j3-cub.jpg" alt="Piper J3 Cub">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Piper J3 Cub</h3>
+                              <p class="tail-number">N311CU</p>
+                              <p class="rental-rate">$105 / hr</p>
+                            </div> <!-- Closes text -->
+                          </div> <!-- Closes Card -->
+                           <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/piper_PA-28-846x564.jpg" alt="Piper Cherokee">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Piper PA-28 Cherokee</h3>
+                              <p class="tail-number">N287PA</p>
+                              <p class="rental-rate">$155 / hr</p>
+                            </div> <!-- Closes text -->
+                          </div> <!-- Closes Card -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/piper_comanche_680x453.jpg" alt="Piper Commanche">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Piper Comanchee</h3>
+                              <p class="tail-number">N600PC</p>
+                              <p class="rental-rate">$220 / hr</p>
+                            </div> <!-- Closes text -->
+                          </div> <!-- Closes Card -->
+                        </div>
+                      </div>
+                    </div> <!-- Closes Piper single -->
+                  </section> <!-- Closes single engine section -->
+                  
+                  <!-- ================= MULTI ENGINE SECTION ================= -->
+                  <section id="multi-engine-section" class="fleet-category">
+                    <h2>Multi-Engine Planes</h2>
+                    <!-- Beechcraft multi engine -->
+                    <div class="accordion-item" id="multi-beechcraft">
+                      <input type="checkbox" id="toggle-multi-beechcraft" class="accordion-toggle" checked>
+                      <label for="toggle-multi-beechcraft" class="accordion-label">Beechcraft</label>
+                      <div class="accordion-content">
+                        <div class="fleet-card-grid">
+                          <!-- Card Template 4 -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/beechcraft_baron-1079x809.jpg" alt="Beechcraft Baron">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Beechcraft Baron</h3>
+                              <p class="tail-number">N552BE</p>
+                              <p class="rental-rate">$400 / hr</p>
+                            </div> <!-- Closes text -->
+                          </div> <!-- Closes Card -->
+                        </div> <!-- Closes grid -->
+                      </div> <!-- Closes accordian-->
+                    </div> <!-- Closes Beechcraft multi-->
+
+                    <!-- Diamond Multi Engine -->
+                    <div class="accordion-item" id="multi-diamond">
+                      <input type="checkbox" id="toggle-multi-diamond" class="accordion-toggle" checked>
+                      <label for="toggle-multi-diamond" class="accordion-label">Diamond</label>
+                      <div class="accordion-content">
+                        <div class="fleet-card-grid">
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/diamond-DA42-1024x683.jpg" alt="Diamond DA42">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Diamond DA42</h3>
+                              <p class="tail-number">N422DA</p>
+                              <p class="rental-rate">$430 / hr</p>
+                            </div> <!-- Closes text -->
+                          </div> <!-- Closes Card -->
+                        </div> <!-- Closes card grid -->
+                      </div> <!-- Closes accordion content -->
+                    </div> <!-- Closes Diamond multi-->
+
+                    <!-- Piper Multi engine-->
+                    <div class="accordion-item" id="multi-piper">
+                      <input type="checkbox" id="toggle-multi-piper" class="accordion-toggle" checked>
+                      <label for="toggle-multi-piper" class="accordion-label">Piper</label>
+                      <div class="accordion-content">
+                        <div class="fleet-card-grid">
+                           <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/piper_seminole_800x483.jpg" alt="Piper Seminole">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Piper Seminole </h3>
+                              <p class="tail-number">N344SE</p>
+                              <p class="rental-rate">$380 / hr</p>
+                            </div> <!-- Closes text -->
+                          </div> <!-- Closes Card -->
+                        </div> <!-- Closes Card Grid for group-->
+                      </div> <!-- Closes accordian -->
+                    </div> <!-- Closes Piper Multi Engine-->
+                  </section> <!-- Closes Multi-Engine section -->
+
+                  <!-- ================= HELICOPTER SECTION ================= -->
+                  <section id="helicopter-section" class="fleet-category">
+                    <h2>Single-Engine Planes</h2>
+                    <div class="accordion-item" id="heli-robinson">
+                      <input type="checkbox" id="toggle-heli-robinson" class="accordion-toggle" checked>
+                      <label for="toggle-heli-robinson" class="accordion-label">Robinson</label>
+                      <div class="accordion-content">
+                        <div class="fleet-card-grid">
+                          <!-- Card Template 4 -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/robinson_r22-805x493.jpg" alt="Robinson R22">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Robinson R22</h3>
+                              <p class="tail-number">N220RH</p>
+                              <p class="rental-rate">$290 / hr</p>
+                            </div> <!-- Closes text -->
+                          </div> <!-- Closes Card -->
+                          <div class="fleet-grid-card">
+                            <div class="fleet-card-image">
+                              <img src="Images/robinson_r44-876x487.jpg" alt="Robinson R44">
+                            </div>
+                            <div class="fleet-card-info">
+                              <h3>Robinson R44</h3>
+                              <p class="tail-number">N441RH</p>
+                              <p class="rental-rate">$550 / hr</p>
+                            </div> <!-- Closes text -->
+                          </div> <!-- Closes Card -->
+                        </div> <!-- Closes Card Grid for group-->
+                      </div> <!-- Closes accordian -->
+                    </div> <!-- Closes Beechcraft Single Engine-->
+                  </section> <!-- Closes Heli section-->
+                </div>
+              </section>
+
+            </main>
+
+
+            
+            <aside class="sidebar">
+              <h2>Contact Us</h2>
+              <p>(727) 555-5555</p>
+              <p><a href="https://www.google.com/maps/place/Albert+Whitted+Airport/@27.7641043,-82.6311477,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2e190b146c28f:0xe0880afd08de68cf!8m2!3d27.7641043!4d-82.6285728!16zL20vMGZueXAz?entry=ttu&g_ep=EgoyMDI2MDkwNi4wIKXMDSoASAFQAw%3D%3D">107 8th Ave SE,<br>St. Petersburg, FL<br>33701</a></p>
+              <br>
+              <a href="contact.html" class="button">Fly with Seminole Aviation</a>
+              <a href="contact.html" class="button">Contact Maintenance Team</a>
+            </aside> 
+        </div> <!-- Closes content -->
+    </div> <!-- Closes wrapper -->
+    <footer class="site-footer">
+  <div class="footer-grid">
+    <!-- Group 1 -->
+    <div class="footer-column">
+      <a href="https://aviationweather.gov/" target="_blank">Aviation Weather Gov</a>
+      <a href="https://www.weather.gov/tbw/tampabayaviationweather" target="_blank">National Weather Service Tampa</a>
+      <a href="https://notams.aim.faa.gov/notamSearch/nsapp.html#/" target="_blank">NOTAM Search</a>
+    </div>
+    <!-- Group 2 -->
+    <div class="footer-column">
+      <a href="https://skyvector.com/airport/SPG/Albert-Whitted-Airport" target="_blank">KSPG Frequencies and Charts</a>
+      <a href="https://parkviewlive.com/locations/albert-whitted-airport" target="_blank">KSPG Live</a>
+      <a href="https://vfrmap.com/?type=vfrc&lat=27.953&lon=-82.828&zoom=10&api_key=763xxE1MJHyhr48DlAP2qQ" target="_blank">Digital Aeronautical Maps</a>
+    </div>
+    
+    <!-- Group 3 -->
+    <div class="footer-column">
+      <a href="https://globe.adsbexchange.com/" target="_blank">Live ADS-B</a>
+      <a href="https://www.faa.gov/about/office_org/field_offices/fsdo/tpa" target="_blank">FAA Tampa FSDO</a>
+      <a href="https://medxpress.faa.gov/MedXpress/Disclaimer.aspx" target="_blank">MedExpress</a>
+    </div>
+  </div>
+  <hr>
+    <p>Copyright &copy; 2026 Seminole Aviation Academy</p>
+</footer>
+    <script>
+    </script>
+  </body>
+</html>

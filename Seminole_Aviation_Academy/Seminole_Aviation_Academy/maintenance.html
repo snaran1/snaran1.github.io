@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Seminole Aviation Academy :: Maintenance</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seminole.css">
+  </head>
+  <body>
+    <header class="hero-header">
+      <div class="header-overlay">
+        <img src="Images/SAA_Logo.png" alt="Seminole Aviation Academy Logo" class="main-logo">
+      </div>
+    </header>
+    <!-- Main Responsive Sticky Navigation Bar -->
+    <nav class="main-navbar">
+      <!-- PC and Tablet - Centered Links -->
+      <div class="nav-desktop-container">
+        <div class="nav-links-centered">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="flight-training.html">Flight Training</a>
+          <a href="rentals.html">Rentals</a>
+          <a href="maintenance.html">Maintenance</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <!-- Mobile view nav bar -->
+      <div class="nav-mobile-container">
+        <a href="index.html" class="mobile-logo-link"><img src="Images/SAA_logo_only.png" alt="SAA Logo Only" class="mobile-logo-img"></a>
+        <!-- Hidden checkbox to control the drawer state without JavaScript -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <!-- Hamburger icon button -->
+        <label for="menu-toggle" class="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- Slide-out Side Drawer Layer -->
+        <div class="side-drawer">
+          <!-- Label acting as a close overlay backdrop -->
+          <label for="menu-toggle" class="drawer-close-overlay"></label>
+          <div class="drawer-content">
+            <!-- Close Button inside the panel -->
+            <label for="menu-toggle" class="drawer-close-btn">&times;</label>
+            <div class="drawer-section"> <!-- Primary Pages Stack -->
+              <h3>Main Navigation</h3>
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="flight-training.html">Flight Training</a>
+              <a href="rentals.html">Rentals</a>
+              <a href="maintenance.html">Maintenance</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="drawer-section resources-section"> <!-- Mobile Resources Stack -->
+              <h3>Additional Resources</h3>
+              <a href="https://aviationweather.gov/" target="_blank">Aviation Weather Gov</a>
+              <a href="https://www.weather.gov/tbw/tampabayaviationweather" target="_blank">National Weather Service Tampa</a>
+              <a href="https://notams.aim.faa.gov/notamSearch/nsapp.html#/" target="_blank">NOTAM Search</a>
+              <a href="https://skyvector.com/airport/SPG/Albert-Whitted-Airport" target="_blank">KSPG Frequencies and Charts</a>
+              <a href="https://parkviewlive.com/locations/albert-whitted-airport" target="_blank">KSPG Live</a>
+              <a href="https://vfrmap.com/?type=vfrc&lat=27.953&lon=-82.828&zoom=10&api_key=763xxE1MJHyhr48DlAP2qQ" target="_blank">Digital Aeronautical Maps</a>
+              <a href="https://globe.adsbexchange.com/" target="_blank">Live ADS-B</a>
+              <a href="https://www.faa.gov/about/office_org/field_offices/fsdo/tpa" target="_blank">FAA Tampa FSDO</a>
+              <a href="https://medxpress.faa.gov/MedXpress/Disclaimer.aspx" target="_blank">MedExpress</a>
+            </div> <!-- Closes Resources stack-->
+          </div> <!-- Closes Mobile Nav Pop-up-->
+        </div> <!-- Closes Nav -->
+      </div>
+    </nav>
+    <div id="wrapper">
+        <div class="content"> 
+            <main class="main-content"> <!-- CONTENT GOES HERE -->
+
+              <section class="hero-promo-section-maint">
+                <div class="hero-content-maint">
+                  <h1 class="hero-text-maint">Aircraft Maintenance</h1>
+                </div>
+              </section>
+
+              <section class="maint-info">
+                <h2>Aircraft Maintenance & Inspections</h2>
+                <p>Keeping you safely in the air with factory-standard service for single-engine, multi-engine, and rotary aircraft.</p>
+                <a href="contact.html" class="small-button">Schedule Service / Request a Quote</a>
+              </section>
+
+              <section class="ft-img-left-txt-right" id="discovery-flights">
+                <div class="ft-img-wrapper-left">
+                  <img class="ft-discovery-img" src="Images/AnP-inspections-1024x1024.jpg" alt="Discovery Flight">
+                </div>
+                <div class="ft-txt-right">
+                  <h2>Required Inspections</h2>
+                  <p>[Description]</p>
+                  <p>[rate]</p>
+                  <ul>
+                    <li>[Plane]]</li>
+                    <li>[Helicopter]</li>
+                    <li>[price per additional passenger]</li>
+                  </ul>
+                </div>
+              </section>
+              
+              <section class="ft-img-right-txt-left" id="certifications">
+                <div class="ft-img-wrapper-right">
+                  <img id="ft-cert-img" src="Images/AnP-AnPH-1440x1440.jpg" alt="FAA Pilot Certificate">
+                </div>
+                <div class="ft-txt-left">
+                  <h2>Airframe & Powerplant</h2>
+                  <p>[Description]</p>
+                  <p>Common certifications:</p>
+                  <ul>
+                    <li>cert 1</li>
+                    <li>cert 2</li>
+                    <li>cert 3</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="ft-img-left-txt-right" id="programs">
+                <div class="ft-img-wrapper-left">
+                  <img class="ft-discovery-img" src="Images/AnP-avionics-800x800.jpg" alt="Programs">
+                </div>
+                <div class="ft-txt-right">
+                  <h2>Specialized Systems</h2>
+                  <p>Part 61</p>
+                  <p>Part 141</p>
+                  <p>university</p>
+                </div>
+              </section>
+              <a href="contact.html" class="button">Contact us [FIX]</a>
+
+            </main>
+            <aside class="sidebar">
+              <h2>Contact Us</h2>
+              <p>(727) 555-5555</p>
+              <p><a href="https://www.google.com/maps/place/Albert+Whitted+Airport/@27.7641043,-82.6311477,17z/data=!3m1!4b1!4m6!3m5!1s0x88c2e190b146c28f:0xe0880afd08de68cf!8m2!3d27.7641043!4d-82.6285728!16zL20vMGZueXAz?entry=ttu&g_ep=EgoyMDI2MDkwNi4wIKXMDSoASAFQAw%3D%3D">107 8th Ave SE,<br>St. Petersburg, FL<br>33701</a></p>
+              <br>
+              <a href="contact.html" class="button">Fly with Seminole Aviation</a>
+              <a href="contact.html" class="button">Contact Maintenance Team</a>
+            </aside> 
+        </div> <!-- Closes content -->
+    </div> <!-- Closes wrapper -->
+    <footer class="site-footer">
+  <div class="footer-grid">
+    <!-- Group 1 -->
+    <div class="footer-column">
+      <a href="https://aviationweather.gov/" target="_blank">Aviation Weather Gov</a>
+      <a href="https://www.weather.gov/tbw/tampabayaviationweather" target="_blank">National Weather Service Tampa</a>
+      <a href="https://notams.aim.faa.gov/notamSearch/nsapp.html#/" target="_blank">NOTAM Search</a>
+    </div>
+    <!-- Group 2 -->
+    <div class="footer-column">
+      <a href="https://skyvector.com/airport/SPG/Albert-Whitted-Airport" target="_blank">KSPG Frequencies and Charts</a>
+      <a href="https://parkviewlive.com/locations/albert-whitted-airport" target="_blank">KSPG Live</a>
+      <a href="https://vfrmap.com/?type=vfrc&lat=27.953&lon=-82.828&zoom=10&api_key=763xxE1MJHyhr48DlAP2qQ" target="_blank">Digital Aeronautical Maps</a>
+    </div>
+    
+    <!-- Group 3 -->
+    <div class="footer-column">
+      <a href="https://globe.adsbexchange.com/" target="_blank">Live ADS-B</a>
+      <a href="https://www.faa.gov/about/office_org/field_offices/fsdo/tpa" target="_blank">FAA Tampa FSDO</a>
+      <a href="https://medxpress.faa.gov/MedXpress/Disclaimer.aspx" target="_blank">MedExpress</a>
+    </div>
+  </div>
+  <hr>
+    <p>Copyright &copy; 2026 Seminole Aviation Academy</p>
+</footer>
+    <script>
+    </script>
+  </body>
+</html>
